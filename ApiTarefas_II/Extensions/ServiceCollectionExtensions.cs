@@ -12,7 +12,7 @@ namespace TarefasApi.Extensions
             builder.Services.AddScoped<GetConnection>(sp =>
             async () =>
             {
-                var connection = new SqlConnection(connectionString);//criando uma nova conecção
+                var connection = new SqlConnection(connectionString);//criando uma nova conexão
                 await connection.OpenAsync();
                 return connection;
             });
